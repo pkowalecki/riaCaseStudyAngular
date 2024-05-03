@@ -1,0 +1,9 @@
+<div *ngIf="meal">
+  <h2>Szczegóły posiłku "{{ meal.name }}"</h2>
+  <p><strong>Data dodania:</strong> {{ meal.additionDate | date }}</p>
+  <p><strong>Data edycji:</strong> {{ meal.editDate | date }}</p>
+  <p><strong>Opis:</strong> {{ meal.description }}</p>
+  <p><strong>Przepis:</strong></p>
+  <div [innerHTML]="meal.recipe"></div>
+  <p><strong>Notatki:</strong> {{ meal.notes }}</p>
+</div>

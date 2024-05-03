@@ -1,0 +1,19 @@
+<form (ngSubmit)="onSubmit()" #mealForm="ngForm">
+  <div>
+    <label>Nazwa:</label>
+    <input type="text" [(ngModel)]="meal.name" name="name" required>
+  </div>
+  <div>
+    <label>Opis:</label>
+    <textarea [(ngModel)]="meal.description" name="description"></textarea>
+  </div>
+  <div>
+    <label>Przepis:</label>
+    <textarea [(ngModel)]="meal.recipe" name="recipe"></textarea>
+  </div>
+  <div>
+    <label>Notatki:</label>
+    <textarea [(ngModel)]="meal.notes" name="notes"></textarea>
+  </div>
+  <button type="submit">{{ isEdit ? 'Zapisz zmiany' : 'Dodaj posiłek' }}</button>
+</form>

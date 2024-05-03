@@ -1,0 +1,13 @@
+<div class="container">
+  <h2 class="mt-4 mb-3">Lista posiłków</h2>
+  <ul class="list-group">
+    <li *ngFor="let meal of meals" class="list-group-item d-flex justify-content-between align-items-center">
+      <a [routerLink]="['/meals', meal.mealId]">{{ meal.name }}</a>
+      <div>
+        <button class="btn btn-primary btn-sm mr-2" (click)="editMeal(meal)">Edytuj</button>
+        <button class="btn btn-danger btn-sm" (click)="deleteMeal(meal)">Usuń</button>
+      </div>
+    </li>
+  </ul>
+  <button class="btn btn-success mt-3" routerLink="/add-meal">Dodaj nowy posiłek</button>
+</div>
