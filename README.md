@@ -1,27 +1,25 @@
-# Angular
+# Aplikacja CRUD Angular
+Aplikacja CRUD na podstawie API: 
+https://github.com/pkowalecki/DietPlanner
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.6.
+Strona obsługuje następujące endpointy: 
 
-## Development server
+'meals' - endpoint zwracający listę wszystkich posiłków w bazie danych,
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+![meal list.](/readmeImg/git-lista.PNG "meal list")
 
-## Code scaffolding
+'meals/add' - dodanie posiłku do bazy,
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+![add meal.](/readmeImg/git-add.PNG "add meal")
 
-## Build
+'meals/:id/edit' - edycja posiłku,
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+'meals/:id/delete' - usuwanie posiłku z bazy,
 
-## Running unit tests
+![details](/readmeImg/git-delete.PNG "details")
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+'meals/:id' - szczegóły posiłku
 
-## Running end-to-end tests
+![details](/readmeImg/git-details.PNG "details")
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
