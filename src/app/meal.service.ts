@@ -28,7 +28,7 @@ export class MealService {
   }
 
   addMeal(meal: Meal): Observable<Meal> {
-    const url = `${this.apiUrl}/addMeal/`;
+    const url = `${this.apiUrl}/addMealTest`;
     return this.http.post<Meal>(url, meal).pipe(
       catchError(this.handleError)
     );

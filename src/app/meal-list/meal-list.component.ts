@@ -22,7 +22,7 @@ export class MealListComponent implements OnInit {
   }
 
   editMeal(meal: Meal): void {
-    this.router.navigate(['/edit-meal', meal.mealId]);
+    this.router.navigate(['meals', meal.mealId, 'edit']);
   }
 
   deleteMeal(meal: Meal): void {
